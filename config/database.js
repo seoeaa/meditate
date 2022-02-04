@@ -6,8 +6,8 @@ module.exports = ({ env }) => ({
       port: env.int('DATABASE_PORT', 25060),
       database: env('DATABASE_NAME', 'defaultdb'),
       user: env('DATABASE_USERNAME', 'doadmin'),
-      password: env('DATABASE_PASSWORD', 'reXIeASLBngWcIyu'),
-      ssl: env.bool('DATABASE_SSL', false),
+      password: env('DATABASE_PASSWORD', 'MT9SOsm53vaDjXu3'),
+      ssl: env.bool('DATABASE_SSL', true),
     },
   },
 });
