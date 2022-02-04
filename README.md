@@ -3,7 +3,7 @@
 
 1. Deploy strapi:
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/seoeaa/meditate/tree/main)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/seoeaa/meditate/tree/main/.do)
 
 
 
