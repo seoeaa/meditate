@@ -1,5 +1,13 @@
 # 🚀 Getting started with Strapi
 
+
+1. Deploy strapi:
+
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/seoeaa/meditate/tree/main)
+
+
+
+
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
 ### `develop`
