@@ -1,22 +1,13 @@
 module.exports = ({ env }) => ({
-  defaultConnection: "default",
-  connections: {
-    default: {
-      connector: "bookshelf",
-      settings: {
-        client: "postgres",
-        host: env('DATABASE_HOST'),
-        port: env('DATABASE_PORT'),
-        database: env('DATABASE_NAME'),
-        username: env('DATABASE_USERNAME'),
-        password: env('DATABASE_PASSWORD'),
-        ssl: {
-          rejectUnauthorized: false,
-        },
-      },
-      options: {},
+  connection: {
+    client: 'postgres',
+    connection: {
+      host: env('DATABASE_HOST', 'db-p-do-user-10783224-0.b.db.ondigitalocean.com'),
+      port: env.int('DATABASE_PORT', 25060),
+      database: env('DATABASE_NAME', 'doadmin'),
+      user: env('DATABASE_USERNAME', 'doadmin'),
+      password: env('DATABASE_PASSWORD', 'kkRFzt1cIoerGime'),
+      ssl: env.bool('DATABASE_SSL', true),
     },
   },
 });
-
-
