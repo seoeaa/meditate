@@ -2,12 +2,17 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', 'db-p-do-user-10783224-0.b.db.ondigitalocean.com'),
-      port: env.int('DATABASE_PORT', 25060),
-      database: env('DATABASE_NAME', 'doadmin'),
-      user: env('DATABASE_USERNAME', 'doadmin'),
-      password: env('DATABASE_PASSWORD', 'kkRFzt1cIoerGime'),
-      ssl: env.bool('DATABASE_SSL', true),
+      host: env('DATABASE_HOST', '127.0.0.1'),
+      port: env.int('DATABASE_PORT', 5432),
+      database: env('DATABASE_NAME', 'strapi'),
+      user: env('DATABASE_USERNAME', 'strapi'),
+      password: env('DATABASE_PASSWORD', 'strapi'),
+      schema: env('DATABASE_SCHEMA', 'public'), // Not required
+      ssl: {
+        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+      },
     },
+    debug: false,
   },
 });
+ 
