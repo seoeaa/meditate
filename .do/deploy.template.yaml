@@ -1,0 +1,31 @@
+spec:
+  name: portfolio-strapi
+  services:
+    - name: strapi
+      git:
+        branch: main
+        repo_clone_url: https://github.com/seoeaa/meditate
+      build_command: yarn build
+      run_command: yarn start
+      envs:
+        - key: STRAPI_URL
+          value: ${APP_URL}
+        - key: NODE_ENV
+          value: "production"
+        - key: DATABASE_URL
+          value: ${db.DATABASE_URL}
+        - key: DATABASE_HOST
+          value: ${db.HOSTNAME}
+        - key: DATABASE_PORT
+          value: ${db.PORT}
+        - key: DATABASE_NAME
+          value: ${db.DATABASE}
+        - key: DATABASE_USERNAME
+          value: ${db.USERNAME}
+        - key: DATABASE_PASSWORD
+          value: ${db.PASSWORD}
+        - key: DATABASE_URL
+          value: ${db.DATABASE_URL}
+
+  databases:
+    - name: db
