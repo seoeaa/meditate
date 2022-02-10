@@ -6,7 +6,7 @@ spec:
         branch: main
         repo_clone_url: https://github.com/seoeaa/meditate
       build_command: yarn build
-      run_command: yarn start
+      run_command: npm run strapi install documentation && yarn develop
       envs:
         - key: STRAPI_URL
           value: ${APP_URL}
