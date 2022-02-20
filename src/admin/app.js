@@ -28,6 +28,14 @@ export default {
       // 'zh-Hans',
       // 'zh',
     ],
+
+    translations: {
+      ru: {
+        Users: 'Пользователи',
+        User: 'Пользователь',
+        Content: 'Контент',    
+      },
+    },
   },
   bootstrap(app) {
     console.log(app);
